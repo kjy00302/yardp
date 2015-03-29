@@ -2,6 +2,7 @@
 
 Original code from https://github.com/byt3bl33d3r/duckhunter
 
-Read duckyscript and process keypress.
-This program only process "US" keyboard layout
+Read [Duckyscript](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript) and process keypress.
+
+This program only can process "US" keyboard layout
 
