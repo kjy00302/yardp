@@ -58,6 +58,7 @@ def presskey(mod, a, b, c, d, e, f):
   f = hiddict.findinlist(f,  "singlekey")
  hiddev.write(mod+"\00"+a+b+c+d+e+f)
  hiddev.write("\x00\x00\x00\x00\x00\x00\x00\x00")
+ hiddev.flush()
  
 def duckscan():
  global parsingline
@@ -79,6 +80,7 @@ def duckscan():
    if byte:
     hiddev.write(hiddict.findinlist(byte, locale))
     hiddev.write("\x00\x00\x00\x00\x00\x00\x00\x00")
+    hiddev.flush()
     time.sleep(defaultsleep*0.001)
    byte = l.read(1)
  elif m.group(1) == "ENTER":
